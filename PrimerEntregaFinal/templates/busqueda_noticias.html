@@ -6,7 +6,7 @@
 
 {% block texto_header %}
 <h4>
-    Listado de Noticias
+    Listado de Entradas
 </h4>
 {% endblock texto_header %}
 
@@ -14,7 +14,10 @@
 
 <nav class="navbar-light bg-light static-top noticias">
     <div class="container">
-        <a class="navbar-brand" href={% url 'crear_noticia' %}>Crear Noticia</a>
+        <a class="navbar-brand" href={% url 'crear_noticia' %}>Crear Noticia</a><ul></ul>
+        <a class="navbar-brand" href={% url 'crear_referencia' %}>Crear Referencia</a><ul></ul>
+        <a class="navbar-brand" href={% url 'crear_publicacionRedes' %}>Crear publicacionRedes</a>
+
     </div>
 </nav> 
 
